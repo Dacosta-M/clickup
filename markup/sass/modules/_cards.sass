@@ -1,0 +1,29 @@
+// 
+    // Cards
+
+
+.card
+    &--padded
+        padding:    25px
+
+.rad-50
+    border-radius:          50px
+.rad-c
+    border-radius:          50%
+.rad-s
+    border-radius:          3px
+.borderless
+    border:                 none
+.thin-light-border
+    border:                 0.5px solid rgba(255,255,255,0.2)
+.thin-dark-border
+    border:                 0.5px solid rgba(0,0,0,0.1)
+
+
+.card-wrapper
+    padding:            $space-sm
+    &.will-grow
+        @media #{$smallup}
+            padding:    $space-md
+        @media #{$mediumup}
+            padding:    $space-lg

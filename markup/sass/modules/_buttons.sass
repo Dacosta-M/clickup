@@ -1,0 +1,36 @@
+// // Buttons
+
+.btn
+    display: inline-flex
+    align-items: center
+    text-align: center
+    justify-content: center
+    padding: 0 2rem
+    white-space: nowrap
+    border-radius: 50px
+    padding: 2rem
+    height: 60px
+    &--white
+        background-color: $white
+        box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1)
+        width: 210px
+        &:hover
+            background-color: darken($white, 10%)
+
+    &--pink
+        // background-color:       $secondarycolor
+        // color:                  $primarycolor
+        &:hover
+            // background-color:       $primarycolor
+            // color:                  #ffffff
+
+    &--purple
+        background-color: #ffffff
+
+        // color:                  $primarycolor
+        &:hover
+            // color:                  $primarycolor
+            // background-color:       lighten( $primarycolor, 50% )
+
+    &:hover
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)

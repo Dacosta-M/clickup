@@ -1,0 +1,104 @@
+// // Base
+
+// Resets
+
+html
+    font-size: $basefont
+    color: $black
+    background-color: $main-bg
+
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+*
+    outline-color: inherit
+    outline: none
+
+    a, button, input
+        outline: none
+
+body
+    margin: 0
+    font-family: $bodyfont
+    font-size: $basefont
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    line-height: normal
+    overflow-x: hidden
+
+p
+    margin: 0
+
+a,
+.as-link
+    text-decoration: none
+    cursor: pointer
+    color: unset
+    transition: all 0.32s ease-out
+
+    &:focus, &:hover
+        text-decoration: none
+
+        // color:                  unset
+        // color:                  $primarycolor
+
+audio, canvas, img, video
+    display: block
+    max-width: unset
+
+svg
+    pointer-events: none
+    vertical-align: middle
+    fill: inherit
+
+    // transition:                 all 0.32s ease
+
+ul
+    padding: 0
+    list-style: none
+    margin: 0
+
+// Buttons, Inputs,
+button
+    outline: none
+
+    &[type="button"]
+        box-sizing: content-box
+        background: none
+        border: 0
+        border-radius: 0
+        color: inherit
+        cursor: pointer
+        overflow: visible
+        padding: 0
+        font: inherit
+
+    &::-moz-focus-inner
+        border: 0
+        padding: 0
+
+input
+    &[type="email"],
+    &[type="submit"],
+    &[type="reset"],
+    &[type="button"]
+        box-sizing: content-box
+        background: none
+        border: 0
+        color: inherit
+        font-size: inherit
+        font-family: inherit
+        font-style: normal
+        line-height: normal
+        overflow: visible
+        padding: 0
+
+        &::-moz-focus-inner
+            border: 0
+            padding: 0
+
+    &[type="button"],
+    &[type="submit"]
+        cursor: pointer

@@ -1,0 +1,103 @@
+// // Variables
+
+// font-family
+
+@font-face
+    font-family: "avenirbold"
+    src: url("/avenir.font/AvenirLTStd-Black.otf") format("otf")
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: "avenirbook"
+    src: url("/avenir.font/AvenirLTStd-Book.otf") format("woff2"), url("/uploads/fonts/relative-book-webfont.woff") format("woff")
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: "helvetica"
+    src: url("Helvetica-Font/Helvetica.ttf") format("ttf")
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: "helveticabold"
+    src: url("Helvetica-Font/Helvetica-Bold.ttf") format("ttf")
+    font-weight: normal
+    font-style: normal
+
+// Typography
+$basefont: 10px
+$smallfont: min(max(1rem, 4vw), 1.6rem)
+$mediumfont: min(max(1.2rem, 4vw), 1.8rem)
+$largefont: min(max(2rem, 4vw), 2.4rem)
+$xlargefont: min(max(2.5rem, 4vw), 4rem)
+$xxlargefont: min(max(6rem, 4vw), 8rem)
+
+$bodyfont: "avenirbook", sans-serif
+$headingfont: "helvetica", serif
+$regularfont: "avenirbold", ans-serif
+$boldfont: "nirbook", sans-serif
+$headingfont: ("helvetica",)
+
+$defaultlh: min(max(2.5rem, 4vw), 2.9rem)
+$headinglh: min(max(6rem, 4vw), 8.8rem)
+$lh-26: min(max(2.5rem, 4vw), 2.6rem)
+$lh-52: min(max(2.5rem, 4vw), 5.2rem)
+
+// Colors
+$white: #ffffff
+$black: #212353
+$greyblack: #4B5D68
+$purple: #9C69E2
+$pink: rgba(240, 99, 184, 0.15)
+$deeppink: #F063B8
+$lightgreen: #62ceba
+$lightpurple: #9d6ce2
+$lightpink: #f562ba
+$lightblue: #279de2
+$main-bg: #E5E5E5
+
+$preferredradius: 5px
+$radius-c: 50%
+$radius-50: 50px
+$radius-10: 10px
+
+// Measures, Widths, & Heights
+$maxwidth-xl: 1192px
+$maxwidth-sl: 1024px
+$maxwidth-lt: 992px
+$maxwidth-tb: 768px
+$maxwidth-sm: 576px
+$maxwidth-500: 500px
+$maxwidth-xs: 360px
+$maxwidth-xxs: 304px
+$maxwidth-750: 750px
+
+$space-xxs: 0.5rem
+$space-xs: 0.79rem
+$space-sm: 1.79rem
+$space-md: 2.79rem
+$space-lg: 3.79rem
+$space-xl: 4.79rem
+$space: 1.09rem
+
+$space-10: 1rem
+$space-20: 2rem
+$space-30: 3rem
+$space-40: 4rem
+$space-50: 5rem
+$space-6: 6rem
+
+// Media Queries
+$xxsmallup: "only screen and (min-width: 312px)"
+$xsmallup: "only screen and (min-width: 368px)"
+$xslandscape: "only screen and (min-width: 480px)"
+$smallup: "only screen and (min-width: 576px)"
+$smalldown: "only screen and (max-width: 575px)"
+$mediumup: "only screen and (min-width: 768px)"
+$mediumdown: "only screen and (max-width: 767px)"
+$largedown: "only screen and (max-width: 991px)"
+$largeup: "only screen and (min-width: 992px)"
+$slaptop: "only screen and (min-width: 1024px)"
+$xlargeup: "only screen and (min-width: 1192px)"

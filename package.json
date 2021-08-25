@@ -1,0 +1,28 @@
+{
+  "name": "clickup-html-css",
+  "version": "1.0.0",
+  "description": "my clickup assessment implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dacosta-M/clickup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dacosta-M/clickup/issues"
+  },
+  "homepage": "https://github.com/Dacosta-M/clickup#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "sass": "^1.38.1"
+  }
+}
