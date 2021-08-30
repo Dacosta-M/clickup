@@ -1,6 +1,59 @@
-
-header
-    max-width: 1170px
+.main-header
+    max-width: 1214px
     display: flex
-    flex-direction: column
-    margin: auto   
+    align-items: center
+    justify-content: space-between
+    margin: auto
+    padding: 2rem
+    position: relative
+
+    @media #{$mediumup}
+        padding: 4.7rem
+
+    .btn
+        display: none
+
+        @media #{$mediumup}
+            display: flex
+            margin-left: 5rem
+
+.hamburger
+    position: absolute
+    right: 2rem
+    top: 3rem
+
+    &:hover
+        color: $black
+
+    @media #{$mediumup}
+        display: none
+
+#mobile-menu-list
+    display: none
+
+    li
+        margin: 2rem 1rem
+
+    .btn
+        display: block
+        padding: 1rem 2rem
+        width: auto
+        height: auto
+        font-size: $smallfont
+
+.menu-list
+    display: none
+
+    @media #{$mediumup}
+        display: flex
+        max-width: 322px
+        justify-content: space-between
+        align-items: center
+        width: 100%
+
+.main-nav
+    @media #{$mediumup}
+        display: flex
+        width: 100%
+        max-width: 492px
+        justify-content: space-between

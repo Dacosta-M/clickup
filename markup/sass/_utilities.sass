@@ -1,62 +1,5 @@
 // // Trumps/Utilities
 
-// Positioning
-
-.absolute-zero
-    position: absolute
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-
-.fixed-zero
-    position: fixed
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-
-.absolute-middle
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-
-.absolute-bottom-right
-    position: absolute
-    right: 0
-    bottom: 0
-
-.absolute-top-right
-    position: absolute
-    right: 0
-    top: 0
-
-.pos-f
-    position: fixed
-
-    &.fixed-to-top
-        top: 0
-        right: 0
-        left: 0
-
-.pos-a
-    position: absolute
-
-.pos-r
-    position: relative
-
-.pos-a-r
-    position: absolute
-
-    @media #{$mediumdown}
-        position: relative
-
-.abs-after-content
-    content: ""
-    display: inline-block
-    position: absolute
-
 // Display
 .d-blk
     display: block
@@ -66,77 +9,34 @@
 
 .d-flx
     display: flex
+    align-items: center
+
+    &__space-center
+        justify-content: space-between
+
+    &__will-res-med
+        flex-direction: column
+
+        @media #{$mediumup}
+            flex-direction: row
+
+    &__will-res-large
+        flex-direction: column
+
+        @media #{$largeup}
+            flex-direction: row
+
+    &--will-wrap
+        flex-wrap: wrap
 
 .d-grid
     display: grid
-
-.d-col-row
-    display: flex
-    flex-direction: column
-
-    @media #{$mediumup}
-        flex-direction: row
-
-.d-col-row-l
-    display: flex
-    flex-direction: column
-
-    @media #{$largeup}
-        flex-direction: row
-
-.flx-inverse
-    flex-direction: row-reverse
-
-.flex-col
-    flex-direction: column
 
 .d-iflx
     display: inline-flex
 
 .flex-1
     flex: 1
-
-.flex-auto
-    flex: auto
-
-.flex-wrap
-    flex-wrap: wrap
-
-.al-i-fs
-    align-items: flex-start
-
-.al-i-fe
-    align-items: flex-end
-
-.al-i-c
-    align-items: center
-
-.al-s-bl
-    align-self: baseline
-
-.j-c-sb
-    justify-content: space-between
-
-.j-c-c
-    justify-content: center
-
-.j-c-fe
-    justify-content: flex-end
-
-.j-c-e
-    justify-content: end
-
-.space-between-groups
-    display: flex
-    align-items: center
-    justify-content: space-between
-
-.space-end-between-groups
-    display: flex
-    align-items: flex-end
-    justify-content: space-between
-
-
 
 // Margins
 .m-0
@@ -205,6 +105,9 @@
 .mb-0
     margin-bottom: 0
 
+.mb--h
+    margin-bottom: -1rem
+
 .mb-hh
     margin-bottom: 0.25rem
 
@@ -219,6 +122,18 @@
 
 .mb-3
     margin-bottom: 3rem
+
+.mb-4
+    margin-bottom: 4rem
+
+.mb-5
+    margin-bottom: 5rem
+
+.mb-6
+    margin-bottom: 6rem
+
+.ml-auto
+    margin-left: auto
 
 .ml-h
     margin-left: 0.5rem
@@ -308,43 +223,27 @@
 .pl-3
     padding-left: 3rem
 
-.radius-c
-    border-radius: $radius-c
-
-.radius-50
-    border-radius: $radius-50
-
-.radius-10
-    border-radius: 10px
+.pr-1
+    padding-right: 1rem    
+// widths
+.w-fit
+    width: fit-content
 
 // Opacity
-.opacity-7
-    opacity: 0.7
-
-// icons
-.icon-w
-    &--18
-        width: 18px
-        height: 18px
-
-    &--20
-        width: 20px
-        height: 20px
-
-    &--50
-        width: 50px
-        height: 50px
+.op-h
+    opacity: 0.5
 
 // Screen Reader Text
 // // The .sr class ensure element is available in the DOM but only to screen readers. The whitespace: nowrap rule ensures accessible texts aren't smushed off screen.
 // // @link https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-.sr:not(:focus):not(:active)
+.sr-only:not(:focus):not(:active)
     position: absolute
     width: 1px
     height: 1px
     padding: 0
     margin: -1px
     border: 0
-    clip-path: inset(100%)
+    clip: rect(0, 0, 0, 0)
     overflow: hidden
     white-space: nowrap
+    border-width: 0

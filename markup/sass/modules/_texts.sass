@@ -14,18 +14,24 @@
     text-decoration: underline
 
 // Sizes
+.microtext
+    font-size: $microfont
 
 .smalltext
     font-size: $smallfont
+    line-height: $lh-26
 
 .mediumtext
     font-size: $mediumfont
+    line-height: $defaultlh
 
 .largetext
     font-size: $largefont
+    line-height: $lh-31
 
 .xlargetext
     font-size: $xlargefont
+    line-height: $lh-52
 
 .xxlargetext
     font-size: $xxlargefont
@@ -36,29 +42,36 @@
 
 .headinglh
     line-height: $headinglh
+    line-height: $headinglh
 
 .lh-26
     line-height: $lh-26
 
+.lh-31
+    line-height: $lh-31
+
 .lh-52
     line-height: $lh-52
 
-// text underline
-.underline
-    text-decoration: underline
-
 // Headings
-h1, h2, h3, h4
+h1, h2, h3, h4, h5, h6
     font-family: $headingfont
-    margin-top: $space-sm
-    margin-bottom: $space
+    margin-top: 3rem
+    margin-bottom: 2rem
     line-height: $headinglh
+    color: $black
+    text-align: center
+
+    @media #{$mediumup}
+        text-align: left
 
 h1, .h1
     font-size: $xxlargefont
+    line-height: $headinglh
 
 h2, .h2, h3, .h3
     font-size: $xlargefont
+    line-height: $defaultlh
 
 .fw-bold
     font-weight: bold
@@ -76,4 +89,7 @@ h2, .h2, h3, .h3
     font-family: $regularfont
 
 .ff-bold
-    font-family: $boldfont
+    font-family: $headingfont
+
+.ls-05
+    letter-spacing: 0.009em

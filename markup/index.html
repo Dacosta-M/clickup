@@ -1,52 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/index.css" />
-</head>
-<body>
-  <h1 className="sr">
-    ClickUp Data
-  </h1>
-  <header class="smalltext">
-<section>
 
-<a>
-  <svg class="" width="25" height="25">
-    <use href="/uploads/icons.svg#logo"></use>
-  </svg>
-</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <!-- <h1 className="sr-only">
+  ClickUp Data
+</h1> -->
 
-<ul>
+  <body>
+    <header class="smalltext main-header">
+      <section class="main-nav ">
+        <a>
+          <svg class="" width="49" height="35">
+            <use href="/uploads/icons.svg#logo"></use>
+          </svg>
+        </a>
+<ul class="menu-list">
   <li>
-About
+    About
   </li>
   <li>
-  Help
+    Help
   </li>
   <li>
-  Features
+    Features
   </li>
   <li>
-  Signup
+    Signup
   </li>
 </ul>
-</section>
-<a class="btn btn--white">
-Request Demo
-<svg class="co-purple ml-1" width="20" height="14">
+        <ul id="mobile-menu-list">
+          <li>
+            About
+          </li>
+          <li>
+            Help
+          </li>
+          <li>
+            Features
+          </li>
+          <li>
+            Signup
+          </li>
+          <li>
+            <a class="btn btn--white">
+              Request Demo
+              <svg class="co-purple ml-1" width="20" height="14">
+                <use href="/uploads/icons.svg#right-arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <a class="btn btn--white">
+        Request Demo
+        <svg class="co-purple ml-1" width="20" height="14">
+          <use href="/uploads/icons.svg#right-arrow"></use>
+        </svg>
+      </a>
+      <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+        <svg class="co-purple ml-1" width="20" height="14">
+          <use href="/uploads/icons.svg#hamburger"></use>
+        </svg>
+      </a>
+    </header>
+    <main>
+      <article class="warehouse-section wrapper wrapper__will-grow">
+        <section class="child-text">
+          <h1 class="mb-6">
+            Save your data storage here.
+          </h1>
+          <p class="mb-h">Data Warehouse is a data storage area that has been tested for security, so you can store your
+            data here
+            safely but not be afraid of being stolen by others.</p>
+          <a href="/" class="btn btn--purple mt-5">
+            Learn more
+          </a>
+        </section>
+        <img class="child-img" src="/uploads/data-img.png" alt="data image">
+      </article>
+      <article class="store-section wrapper wrapper__will-grow d-flx d-flx__space-center d-flx__will-res-med">
+        <img class="child-img" src="/uploads/image2.png" alt=" storage illustration">
+        <section class="child-text">
+          <h2 class="xlargetext">
+            We are a high-level data storage bank
+          </h2>
+          <p>
+            The place to store various data that you can access at any time through the internet and where you can carry
+            it. <br>
+            This very flexible storage area has a high level of security. <br>
+            To enter into your own data you must enter
+            the password that you created when you registered in this Data Warehouse.
+          </p>
+        </section>
+      </article>
+      <article>
+        <div class="feature-excerpt mb-2 wrapper">
+          <h3 class="tx-c lh-52">
+            Features
+          </h3>
+          <p class="tx-c">
+            Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.
+          </p>
+        </div>
+        <div class="features wrapper wrapper__will-grow">
+          <section class="d-flx d-flx__will-res-large card card__first">
+            <img src="/uploads/image3.png" alt="data illustration">
+          <div class="text">
+            <div class="text-child">
+              <h6 class="lh-31 largetext fw-normal mb-3">
+                Search Data
+              </h6>
+              <p class="">
+                Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for
+                making it easier to find data effectively saving time.
+              </p>
+                </div>
+                <a class="">
+                  Learn more
+                  <svg class="ml-1 co-purple" width="20" height="14">
+                    <use href="/uploads/icons.svg#right-arrow"></use>
+                  </svg>
+                </a>
+                </div>
+          </section>
+          <section class="d-flx d-flx__will-res-large card card__second">
+            <img src="/uploads/image4.png" alt="access illustration">
+            <div class="text">
+              <div class="text-child">
+                <h6 class="lh-31 largetext fw-normal mb-3">
+                  24 Hours Access
+                </h6>
+                <p class="">
+                  Access is given 24 hours a full morning to night and
+                  meet again in the morning, giving you comfort when
+                  you need data when urgent.
+                </p>
+                
+              </div>
+              <a class="">
+                Learn more
+                <svg class="ml-1 co-purple" width="20" height="14">
+                  <use href="/uploads/icons.svg#right-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </section>
+          <section class="d-flx d-flx__will-res-large card card__third">
+            <img src="/uploads/image5.png" alt="print-out illustration">
+          <div class="text">
+            <div class="text-child">
+              <h6 class="lh-31 largetext fw-normal mb-3">
+                Print Out
+              </h6>
+              <p>
+                Print out service gives you convenience if someday
+                you need print data, just edit it all and just print it.
+              </p>
+                </div>
+                <a class="">
+                  Learn more
+                  <svg class="ml-1 co-purple" width="20" height="14">
+                    <use href="/uploads/icons.svg#right-arrow"></use>
+                  </svg>
+                </a>
+                </div>
+          </section>
+          <section class="d-flx d-flx__will-res-large card card__fourth">
+            <img src="/uploads/image6.png" alt="security illustration">
+            <div class="text">
+              <div class="text-child">
+              <h6 class="lh-31 largetext fw-normal mb-3">
+                Security Code
+              </h6>
+              <p>
+                Data Security is one of our best facilities. Allows for your files
+                to be safer. The file can be secured with a code or password that
+                you created, so only you can open the file.
+              </p>
+                </div>
+                <a class="">
+                  Learn more
+                  <svg class="ml-1 co-purple" width="20" height="14">
+                    <use href="/uploads/icons.svg#right-arrow"></use>
+                  </svg>
+                </a>
+                </div>
+          </section>
+        </div>
+      </article>
+      <article class="testimony wrapper wrapper__will-grow">
+        <div class="w-fit ml-auto">
+          <h4 class="co-white xlargetext mb-5">
+            Testimonials
+          </h4>
+          <div class="testimony-container">
+            <section class="testimony-card testimony-card__first">
+              <img class="avatar" src="/uploads/Ellipse76-1.png" alt="John Fang's picture">
+              <div class="">
+                <div class="">
+                  <h6 class="lh-26 mediumtext mb--h">
+                    John Fang
+                  </h6>
+                  <sub class="co-purple microtext">
+                    wordfaang.com
+                  </sub>
+                </div>
+                <p class="mt-1h ff-light">
+                  Suspendisse ultrices at diam lectus nullam.
+                  Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.
+                </p>
+              </div>
+            </section>
+            <div class="shadow">
+              <section class="testimony-card testimony-card__second">
+                <img class="avatar" src="/uploads/Ellipse76.png" alt="Jeny Doe's picture">
+                <div class="">
+                  <h6 class="lh-26 mediumtext mb--h">
+                    Jeny Doe
+                  </h6>
+                  <sub class="co-purple microtext">
+                    UX Engineer
+                  </sub>
+                  <p class="mt-1h ff-light">
+                    Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor
+                  </p>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div>
+            <ul class="slider-indicator mt-3">
+              <li class="active">
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+              <li>
+              </li>
+            </ul>
+            <div class="arrow-indicator co-white">
+<svg class="" width="40" height="14">
+  <use href="/uploads/icons.svg#arrow-left"></use>
+</svg>
+<svg class="ml-1 op-h" width="20" height="14">
   <use href="/uploads/icons.svg#right-arrow"></use>
 </svg>
-</a>
-  </header>
-  <main>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <section>
+        <div>
+          <h5>
+            Try for free!
+          </h5>
+          <p>
+            Get limited 1 week free try our features!
+          </p>
+        </div>
+        <div>
+          <a href="">Learn more</a>
+          <a class="">
+            Request Demo
+            <svg class="ml-1" width="20" height="14">
+              <use href="/uploads/icons.svg#right-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="site-map">
+        <div>
+          <div>
+            <svg class="" width="25" height="25">
+              <use href="/uploads/icons.svg#logo"></use>
+            </svg>
+            <p>DataWarehouse</p>
+          </div>
+          <div>
+            <p>
+              Warehouse Society, 234
+            </p>
+            <p>
+              Bahagia Ave Street PRBW 29281
+            </p>
+          </div>
+          <div>
+            <p>
+              info@warehouse.project
 
-  </main>
-  <footer>
+            </p>
+            <p>
+              1-232-3434 (Main)
+            </p>
+          </div>
+        </div>
+        <ul>
+          <li>
+            About
+          </li>
+          <li>
+            Profile
+          </li>
+          <li>
+            Features
+          </li>
+          <li>
+            Careers
+          </li>
+          <li>
+            DW News
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Support
+          </li>
+          <li>
+            Sign up
+          </li>
+          <li>
+            Guide
+          </li>
+          <li>
+            Reports
+          </li>
+          <li>
+            Q&A
+          </li>
+        </ul>
+        <ul>
+          <li>
+            Social Media
+          </li>
+          <li>
+            <span>
 
-  </footer>
-</body>
+            </span>
+            <span>
+
+            </span>
+            <span>
+
+            </span>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mobile-menu-list");
+        if (x.style.display === "block")
+        {
+          x.style.display = "none";
+        } else
+        {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+
 </html>

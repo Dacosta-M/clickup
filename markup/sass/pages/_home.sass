@@ -1,4 +1,122 @@
-// 
-    // Home Page
-    
+// // Landing Page
+
 //
+
+.warehouse-section
+    text-align: center
+    position: relative
+    margin-bottom: 3rem
+    padding-top: 0
+
+    @media #{$mediumup}
+        display: flex
+        justify-content: space-between
+        text-align: left
+        max-width: 1165px
+        width: 100%
+        margin-left: auto
+        margin-right: auto
+
+    .child-img
+        width: 100%
+        margin-top: 5rem
+
+        @media #{$mediumup}
+            max-width: 430px
+            position: absolute
+            right: 0
+            bottom: 5%
+            margin-top: 0
+
+        @media #{$largeup}
+            max-width: 660px
+            bottom: 0
+
+        @media #{$xlargeup}
+            max-width: 885px
+            right: -9%
+            top: 22%
+
+    .child-text
+        position: relative
+        max-width: 600px
+        margin: auto
+
+        @media #{$mediumup}
+            margin: 0
+
+        p
+            max-width: 365px
+            margin: auto
+
+            @media #{$mediumup}
+                margin-left: 0
+
+.store-section
+    max-width: 1117px
+    background-color: $pink
+    border-radius: $radius-50
+    padding: 1.5rem
+
+    @media #{$xlargeup}
+        padding-left: 1rem
+        margin: 15rem auto
+
+    .child-text
+        max-width: 474px
+
+        @media #{$largeup}
+            margin-right: 7rem
+
+    .child-img
+        max-width: 350px
+        margin-right: 1rem
+
+        @media #{$largeup}
+            max-width: 477px
+            margin-right: 0
+
+.feature-excerpt
+    max-width: 580px
+
+    @media #{$mediumup}
+        margin: auto
+
+.features
+    max-width: 1137px
+    width: 100%
+    margin: auto
+    font-size: $smallfont
+    display: grid
+    grid-gap: 4rem
+    margin-top: 1rem
+
+    @media #{$mediumup}
+        grid-template-columns: auto auto
+        margin-top: 3rem
+
+    @media #{$largeup}
+        grid-gap: 5rem
+        margin-top: 4rem
+
+.avatar
+    width: 90px
+    height: 90px
+
+.testimony
+    max-width: 1117px
+    background-color: $purple
+    border-radius: $radius-50
+    padding: 1.5rem
+
+    @media #{$xlargeup}
+        padding-left: 1rem
+        margin: 15rem auto
+
+.testimony-container
+    margin: auto
+    width: fit-content
+    @media #{$largeup}
+        // margin-right: 0
+        display: flex
+        align-items: center
